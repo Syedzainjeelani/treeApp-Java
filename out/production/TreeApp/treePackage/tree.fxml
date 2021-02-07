@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="treePackage.TreeController">
+   <children>
+      <HBox layoutY="445.0" prefHeight="55.0" prefWidth="700.0" style="-fx-background-color: #Ab2343;">
+         <children>
+            <JFXButton fx:id="fill" onAction="#fill" ripplerFill="#c6cfd3" style="-fx-background-color: #6fabc9;" text="Fill">
+               <HBox.margin>
+                  <Insets bottom="10.0" left="60.0" right="10.0" top="15.0" />
+               </HBox.margin>
+            </JFXButton>
+            <JFXButton fx:id="insert" layoutX="10.0" layoutY="10.0" onAction="#insert" ripplerFill="#c6cfd3" style="-fx-background-color: #6fabc9;" text="Insert">
+               <HBox.margin>
+                  <Insets bottom="10.0" left="20.0" right="10.0" top="15.0" />
+               </HBox.margin>
+            </JFXButton>
+            <JFXButton fx:id="search" layoutX="62.0" layoutY="10.0" onAction="#search" ripplerFill="#c6cfd3" style="-fx-background-color: #6fabc9;" text="Search">
+               <HBox.margin>
+                  <Insets bottom="10.0" left="20.0" right="10.0" top="15.0" />
+               </HBox.margin>
+            </JFXButton>
+            <JFXButton fx:id="traverse" layoutX="114.0" layoutY="10.0" onAction="#traverse" ripplerFill="#c6cfd3" style="-fx-background-color: #6fabc9;" text="Traverse">
+               <HBox.margin>
+                  <Insets bottom="10.0" left="20.0" right="10.0" top="15.0" />
+               </HBox.margin>
+            </JFXButton>
+            <JFXButton fx:id="delete" layoutX="166.0" layoutY="10.0" onAction="#delete" ripplerFill="#c6cfd3" style="-fx-background-color: #6fabc9;" text="Delete">
+               <HBox.margin>
+                  <Insets bottom="10.0" left="20.0" right="40.0" top="15.0" />
+               </HBox.margin>
+            </JFXButton>
+            <Label prefHeight="27.0" prefWidth="65.0" text="Enter input" textFill="WHITE">
+               <HBox.margin>
+                  <Insets bottom="10.0" left="20.0" right="5.0" top="15.0" />
+               </HBox.margin>
+            </Label>
+            <JFXTextField fx:id="inputField" focusColor="#7e8bb9" prefHeight="25.0" prefWidth="80.0" style="-fx-background-color: c2e9fb;">
+               <HBox.margin>
+                  <Insets bottom="10.0" left="5.0" right="10.0" top="15.0" />
+               </HBox.margin>
+            </JFXTextField>
+         </children>
+      </HBox>
+      <Pane fx:id="TreeBGPane" prefHeight="445.0" prefWidth="700.0" style="-fx-background-color: c2e9fb;">
+         <children>
+            <JFXTextArea fx:id="msgText" layoutX="5.0" layoutY="419.0" maxWidth="-Infinity" minHeight="-Infinity" prefHeight="25.0" prefWidth="689.0" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
